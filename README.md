@@ -133,7 +133,7 @@ ai6_workshop-4/
 ├── user_brief.md                 # "Project Legacy" scenario
 ├── activities/                   # 10 activities with _start.md and _solution.md
 ├── templates/                    # Bicep templates (legacy, starter, complete)
-├── docs/                         # Setup, troubleshooting, emoji guide
+├── docs/                         # Setup guide
 └── diagrams/                     # ASCII diagrams for visual reference
 ```
 

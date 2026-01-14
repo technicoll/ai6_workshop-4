@@ -78,25 +78,16 @@ Your diagram should show:
 
 Answer these questions:
 
-**Q1: How do external vendors authenticate?**
-- ✅ 
-
-**Q2: Can someone with just a URL read files?**
-- ✅ 
-
-**Q3: What TLS version is enforced?**
-- ✅ 
-
-**Q4: How do you revoke someone's access?**
-- ✅ 
+1. How do external vendors authenticate?
+1. Can someone with just a URL read files?
+1. What TLS version is enforced?
+1. How do you revoke someone's access?
 
 ---
 
 
 ## 🔗 Next Steps
 
-After lunch, we'll parameterize this template for dev/test/live environments!
-
-**Lunch Break:** 12:30-13:30
+After lunch, we'll parameterise this template for dev/test/live environments!
 
 Then move to [Activity 6: Parameterisation](../activity-6/activity-6_start.md)

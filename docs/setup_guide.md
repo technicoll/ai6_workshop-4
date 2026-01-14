@@ -91,12 +91,13 @@ Before starting Activity 1, ensure you have:
 3. Select "Mount storage account"
 4. Select the one storage account subscription available in the drop-down (will look like "Px-Real Hands-On Labs")
 5. Click "Apply"
-6. Select "I want to create a storage account"
+6. Select "I want to create a storage account" and click "Next"
 7. Select the one available resource group under "Resource group" (which should have the same name as that in the top-left corner of the dashboard)
 8. Select the region that matches the "Location" in the dashboard (look in the middle of the screen under "Essentials"), which is often (but not always) "East US"
 9. Provide a "Storage account name" and "File share". These can be whatever you want, but make them easy to identify e.g. `cloudaccount` and `cloudfiles`, respectively.
 10. Click "Create"
 11. Wait for Cloud Shell to initialise (~30 seconds)
+12. Once initialised, click the "Settings" button in the toolbar for the Cloude Shell (which has a cog icon beside it) and select "Go to Classic Version".
 
 ---
 
@@ -294,28 +295,16 @@ Regardless of which environment you chose, verify these work:
 ⌨️ **Run:**
 
 ```bash
+az bicep install
+```
+
+Then check it's installed successfully with:
+
+```bash
 az bicep version
 ```
 
 ✅ **Checkpoint:** You see Bicep CLI version (0.20.0 or newer)
-
-⚠️ **If not installed:**
-
-```bash
-az bicep install
-```
-
----
-
-### Verify Azure Connection
-
-⌨️ **Run:**
-
-```bash
-az group list --output table
-```
-
-✅ **Checkpoint:** You see your sandbox resource group listed
 
 ---
 

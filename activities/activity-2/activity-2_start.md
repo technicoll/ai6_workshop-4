@@ -74,7 +74,7 @@ code legacy.bicep
 
 📖 * https://learn.microsoft.com/en-us/azure/cloud-shell/using-cloud-shell-editor
 
-⚠️ **Note:** If you are doing this in the Cloud Shell you may be asked to use the legacy Cloud Shell. This is fine to accept.
+⚠️ **Note:** If you are doing this in the Cloud Shell you may be asked to use the legacy Cloud Shell (or a "previous version"). **You should accept this if prompted**.
 
 ---
 
@@ -160,13 +160,13 @@ Get comfortable navigating official documentation so you can work confidently an
 az storage account list -g $rg -o table
 ```
 
-✅ **Checkpoint:** You should see a storage account with a name like `legacy<random-string>`
+✅ **Checkpoint:** You should see a storage account with a name like `legacy<random-string>`. You may also see additional storage accounts, but what is important is that you see this one. Note that the "Name" column is quite far to the right.
 
-**Example output:**
+**Example output:** (This does not reflect the sum total of columns or the column order, just example values for each column.)
 ```
 Name                        Location    ResourceGroup
 --------------------------  ----------  -----------------------------
-legacyg4k7m9x2pq3s         eastus      1-e58d5f37-playground-sandbox
+legacyg4k7m9x2pq3s          eastus      1-e58d5f37-playground-sandbox
 ```
 
 💡 **Why the random string?** The `uniqueString()` function in Bicep generates a hash based on your resource group ID. This ensures globally unique storage account names (required by Azure).
@@ -177,11 +177,24 @@ legacyg4k7m9x2pq3s         eastus      1-e58d5f37-playground-sandbox
 
 ⌨️ **List containers in the storage account:**
 
+**Option 1: If working from the Cloud Shell**
+
 ```bash
 # Get the storage account name
+export STORAGE_ACCOUNT=$(az storage account list -g $rg --query "[1].name" -o tsv)
+echo "Storage account: $STORAGE_ACCOUNT"
+```
+
+**Option 2: If working from Codespaces**
+
+```bash
 export STORAGE_ACCOUNT=$(az storage account list -g $rg --query "[0].name" -o tsv)
 echo "Storage account: $STORAGE_ACCOUNT"
+```
 
+**Then for both:**
+
+```bash
 # List containers
 az storage container list \
   --account-name $STORAGE_ACCOUNT \

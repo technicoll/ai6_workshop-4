@@ -81,7 +81,7 @@ This is normal—`inventoryPolicies` is an Azure feature we're not using, and so
 ls -lh current_state.json
 ```
 
-✅ **Checkpoint:** You should see a fiale ~10-20KB in size
+✅ **Checkpoint:** You should see a file ~10-20KB in size (though the exact size doesn't matter much).
 
 ---
 
@@ -128,6 +128,8 @@ While still in `current_state.json`, search for:
 - `allowBlobPublicAccess` - should be `true` (insecure!)
 - `publicAccess` - should be `"Blob"` (insecure!)
 
+⚠️ If you're working from the Cloud Shell, there will be two storage resources reported in the current state. One of these is the one you created in the previous activity, the other is the one you created when initialising Cloud Shell. The latter will not have security vulnerabilities listed above, but the former will. You can verify which is which by looking for the `"name"` key for each resource listed under `"resources"`. There's more on this below.
+
 ✅ **Checkpoint:** Found both insecure properties in the JSON
 
 ---
@@ -167,6 +169,7 @@ code current_state.bicep
 ```
 
 **🌐 Cloud Shell:** Opens in built-in browser editor
+
 **💻 Codespaces:** Opens in VS Code editor
 
 💡 **Observation:** This is much more readable than JSON, but still messy!
@@ -287,6 +290,7 @@ code current_state.bicep
 ```
 
 **🌐 Cloud Shell:** Opens both in browser editor tabs
+
 **💻 Codespaces:** Opens both in VS Code editor
 
 **Notice:**

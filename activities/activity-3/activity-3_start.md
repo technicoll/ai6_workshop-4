@@ -94,6 +94,7 @@ code current_state.json
 ```
 
 **🌐 Cloud Shell:** Opens in built-in browser editor
+
 **💻 Codespaces:** Opens in VS Code editor
 
 💡 **Don't try to read all 300+ lines!** This is why we use search tools.

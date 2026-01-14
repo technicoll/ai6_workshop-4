@@ -1,7 +1,5 @@
 # Workshop 4 Setup Guide
 
----
-
 ## 🖥️ Choose Your Environment
 
 This workshop supports two environments. Choose ONE:
@@ -147,7 +145,7 @@ az group show --name $rg --query location -o tsv
 
 ---
 
-## Step 3: Install/Verify Tools (5 minutes)
+## Step 3: Install/Verify Tools
 
 ### Check Azure CLI
 
@@ -179,7 +177,7 @@ Before starting Activity 1, ensure you have:
 
 ---
 
-### Step 1: Fork Repository via GitHub Classroom (2 minutes)
+### Step 1: Fork Repository via GitHub Classroom
 
 ⚠️ **Important:** You'll receive a GitHub Classroom link separately from your coach.
 
@@ -228,7 +226,7 @@ You should see Azure CLI version 2.30+ installed
 
 ---
 
-### Step 4: Authenticate with Azure (5 minutes)
+### Step 4: Authenticate with Azure
 
 ⌨️ **Run:**
 

@@ -275,7 +275,7 @@ Look at the `"properties": {` section - what information does Azure provide?
 
 Now that you've deployed the insecure infrastructure, it's time to introspect it!
 
-Move to [Activity 3: Introspection](./activity-3/activity-3_start.md) to:
+Move to [Activity 3: Introspection](../activity-3/activity-3_start.md) to:
 - Export your deployed resources to JSON
 - Learn about the "Two-Lane Model" (patch vs. refactor)
 - Understand why we'll choose the refactor approach

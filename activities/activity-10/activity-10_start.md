@@ -40,7 +40,7 @@ For each security fix you made, identify which industry standards require it.
 - PR.DS-2: "Data-in-transit is protected"
 
 **Why it matters:**
-Public access = unauthorized data exposure. These standards exist because data breaches from misconfigured cloud storage are one of the most common security incidents.
+Public access = unauthorised data exposure. These standards exist because data breaches from misconfigured cloud storage are one of the most common security incidents.
 
 ---
 
@@ -178,7 +178,7 @@ You've completed Workshop 4: Secure ML Data Pipelines with IaC!
 
 ✅ **Refactored** using Lane 2 approach (clean baseline)
 
-✅ **Parameterized** templates for environment promotion
+✅ **Parameterised** templates for environment promotion
 
 ✅ **Validated** with `what-if` before deploying (S10)
 

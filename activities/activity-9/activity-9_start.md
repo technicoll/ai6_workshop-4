@@ -32,9 +32,6 @@ Create a file called `HANDOFF.md` that documents your secure infrastructure.
 code HANDOFF.md
 ```
 
-**🌐 Cloud Shell:** Opens in built-in browser editor
-**💻 Codespaces:** Opens in VS Code editor
-
 ---
 
 ### Use This Template

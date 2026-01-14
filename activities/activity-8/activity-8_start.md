@@ -32,9 +32,6 @@ Before we deploy, let's understand the **fix-forward pattern** - the safest way 
 code main_secure.bicep
 ```
 
-**🌐 Cloud Shell:** Opens in built-in browser editor
-**💻 Codespaces:** Opens in VS Code editor
-
 Confirm these are present:
 - `allowBlobPublicAccess: false`
 - `minimumTlsVersion: 'TLS1_2'`

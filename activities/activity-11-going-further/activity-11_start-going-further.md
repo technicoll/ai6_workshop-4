@@ -172,7 +172,7 @@ We'll use the Azure Portal wizard for speed. In production, you'd use Infrastruc
 
 ✅ **Checkpoint:** Workspace deployment succeeds
 
-💡 **Why this approach?** In a workshop, we prioritize speed. In production, you'd use the CLI approach (see Step 1.3) for repeatability and version control.
+💡 **Why this approach?** In a workshop, we prioritise speed. In production, you'd use the CLI approach (see Step 1.3) for repeatability and version control.
 
 ---
 
@@ -213,7 +213,7 @@ az ml workspace create \
 **Benefits:**
 - ✅ Repeatable across environments
 - ✅ Version controlled in Git
-- ✅ Can be parameterized for dev/test/prod
+- ✅ Can be parameterised for dev/test/prod
 - ✅ Follows IaC principles from Activities 1-10
 
 📖 **Learn more:** [Manage Azure ML workspaces using Azure CLI](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-workspace-cli)
@@ -444,7 +444,7 @@ We need to select only the columns used for training.
 3. Click on **Split Data** and configure:
    - **Splitting mode:** Split Rows
    - **Fraction of rows in the first output:** `0.7` (70% for training)
-   - **Randomized split:** Yes
+   - **Randomised split:** Yes
    - **Random seed:** `42` (for reproducibility)
 
 **Split Data** has two outputs:
@@ -1063,7 +1063,7 @@ with mlflow.start_run(run_name="rf-baseline"):
 You've completed the full workshop:
 
 - **Activities 1-5:** Audited legacy infrastructure, identified vulnerabilities
-- **Activities 6-10:** Built parameterized templates, deployed securely
+- **Activities 6-10:** Built parameterised templates, deployed securely
 - **Activity 11:** Applied security principles to ML workloads
 
 **Well done! 🎓**

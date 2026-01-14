@@ -1,8 +1,8 @@
 # Activity 6 Solution Files
 
-This folder contains the completed parameterized template from Activity 6.
+This folder contains the completed parameterised template from Activity 6.
 
-## main_secure_parameterized.bicep
+## main_secure_parameterised.bicep
 
 This is the secure baseline template with parameterization added.
 
@@ -24,7 +24,7 @@ This is the secure baseline template with parameterization added.
   - containerName
   - environment
 
-**Important:** Security properties are NOT parameterized:
+**Important:** Security properties are NOT parameterised:
 - `allowBlobPublicAccess: false` (hardcoded)
 - `minimumTlsVersion: 'TLS1_2'` (hardcoded)
 - `publicAccess: 'None'` (hardcoded)

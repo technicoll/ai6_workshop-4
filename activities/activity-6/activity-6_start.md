@@ -6,11 +6,11 @@
 
 ## 🎯 Learning Objective
 
-Parameterize the secure template to enable deployment across dev/test/live environments
+Parameterise the secure template to enable deployment across dev/test/live environments
 
 ---
 
-## 📖 Why Parameterize?
+## 📖 Why Parameterise?
 
 Right now, your `main_secure.bicep` has hard-coded values. This works for ONE environment, but what about dev → test → live?
 
@@ -57,9 +57,6 @@ name: 'safe${env}${uniqueString(resourceGroup().id)}'  // safedev..., safetest..
 code main_secure.bicep
 ```
 
-**🌐 Cloud Shell:** Opens in built-in browser editor
-**💻 Codespaces:** Opens in VS Code editor
-
 ---
 
 ### Step 2: Add Parameters at the Top
@@ -87,6 +84,11 @@ To:
 ```bicep
 name: 'safe${env}${uniqueString(resourceGroup().id)}'
 ```
+
+📖 **Note:** `${expr}` inside a quoted string denotes **string interpolation** and evaluates `expr`, injecting its value at that position. Commonly used with parameters, variables, functions, and resource properties to build names, tags, or other string fields.
+
+String interpolation is used *twice* in the code above. Can you spot the expressions that are being evaluated?
+
 
 ---
 
@@ -149,7 +151,7 @@ Outputs help verify what was deployed.
 
 ---
 
-## ✅ Checkpoint: Your Parameterized Template
+## ✅ Checkpoint: Your Parameterised Template
 
 Your complete template should now look like:
 
@@ -175,8 +177,8 @@ resource secureStorage 'Microsoft.Storage/storageAccounts@2021-09-01' = {
   }
 
   properties: {
-    allowBlobPublicAccess: false      // 🔐 Never parameterize!
-    minimumTlsVersion: 'TLS1_2'       // 🔐 Never parameterize!
+    allowBlobPublicAccess: false      // 🔐 Never parameterise!
+    minimumTlsVersion: 'TLS1_2'       // 🔐 Never parameterise!
   }
 }
 
@@ -189,7 +191,7 @@ resource rawSecure 'Microsoft.Storage/storageAccounts/blobServices/containers@20
   parent: blobService
   name: 'raw-${env}'
   properties: {
-    publicAccess: 'None'              // 🔐 Never parameterize!
+    publicAccess: 'None'              // 🔐 Never parameterise!
   }
 }
 

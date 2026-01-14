@@ -2,7 +2,7 @@
 
 ---
 
-## ✅ Complete Parameterized Template
+## ✅ Complete Parameterised Template
 
 This is the complete solution (also available in `templates/main_secure_complete.bicep`):
 
@@ -71,7 +71,7 @@ output environment string = env
 
 ## 📊 What Changed
 
-| Aspect | Phase 1 (Hard-coded) | Phase 2 (Parameterized) |
+| Aspect | Phase 1 (Hard-coded) | Phase 2 (Parameterised) |
 |--------|---------------------|------------------------|
 | **Storage name** | `secure...` | `safe${env}...` |
 | **Container name** | `raw-secure` | `raw-${env}` |
@@ -83,7 +83,7 @@ output environment string = env
 
 ## 🔐 Security Invariants
 
-These properties are **LOCKED** (not parameterized):
+These properties are **LOCKED** (not parameterised):
 - `allowBlobPublicAccess: false`
 - `minimumTlsVersion: 'TLS1_2'`
 - `publicAccess: 'None'`

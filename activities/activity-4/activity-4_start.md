@@ -67,10 +67,6 @@ You'll use a starter template with TODOs that guide you through building the sec
 code main_secure.bicep
 ```
 
-**🌐 Cloud Shell:** Opens in built-in browser editor
-
-**💻 Codespaces:** Opens in VS Code editor
-
 Paste in the template with its TODOs and hints.
 
 ---
@@ -148,10 +144,6 @@ Let's see exactly what changed.
 code legacy.bicep
 code main_secure.bicep
 ```
-
-**🌐 Cloud Shell:** Opens both in browser editor tabs
-
-**💻 Codespaces:** Opens both in VS Code editor
 
 ### Key Differences
 

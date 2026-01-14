@@ -141,4 +141,4 @@ Before moving to Activity 2, make sure you have:
 - [ ] Explained the **risk** of each vulnerability (what could go wrong)
 - [ ] Created a `SECURITY_AUDIT.md` file with your findings
 
-**Remember:** This activity is about **identifying** vulnerabilities. In Activity 2, you'll deploy them (to understand what you're fixing), and in Activity 4, you'll fix them properly.
+**Remember:** This activity is about **identifying** vulnerabilities. In [Activity 2](../activity-2/activity-2_start.md), you'll deploy them (to understand what you're fixing), and in Activity 4, you'll fix them properly.

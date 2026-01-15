@@ -1,4 +1,4 @@
-# Activity 3: Introspection
+# Activity 3: Introspection Steps
 
 **Primary KSBs:** S16, S8, K13
 

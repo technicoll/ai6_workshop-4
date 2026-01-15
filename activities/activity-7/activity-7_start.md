@@ -1,4 +1,4 @@
-# Activity 7: Staging Gate (what-if)
+# Activity 7: Interpreting the Diff
 
 **Primary KSB:** S10 (validate fitness for purpose)
 
@@ -123,7 +123,7 @@ az deployment group what-if \
 ```
 
 **Notice:**
-- Different storage account name: `securetestg4k7m9x2pq3s`
+- Different storage account name: `safetestg4k7m9x2pq3s`
 - Different container name: `raw-test`
 - Different tag: `tags.environment: "test"`
 - **Same security properties!** (TLS1_2, no public access)

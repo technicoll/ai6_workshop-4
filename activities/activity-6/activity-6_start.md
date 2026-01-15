@@ -1,4 +1,4 @@
-# Activity 6: Parameterisation
+# Activity 6: Adding Parameters
 
 **Primary KSB:** S16 (design for live operation)
 

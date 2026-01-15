@@ -247,8 +247,6 @@ Commit: [Git commit hash]
 - [Troubleshooting Guide](../../docs/troubleshooting.md)
 - [Security Audit](../../activities/activity-1/)
 
-```
-
 ---
 
 ## ✅ Checkpoint

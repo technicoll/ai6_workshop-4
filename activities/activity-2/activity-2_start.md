@@ -1,4 +1,4 @@
-# Activity 2: Simulating Inherited Problem
+# Activity 2: Simulating an Inherited Problem
 
 **Primary KSB:** S8 (context), S16 (setup)
 

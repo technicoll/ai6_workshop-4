@@ -1,4 +1,4 @@
-# Activity 5: Pipeline Sketch / Design Check
+# Activity 5: Pipeline Sketch (Design Check)
 
 **Primary KSB:** S10 (fitness for purpose), S16
 

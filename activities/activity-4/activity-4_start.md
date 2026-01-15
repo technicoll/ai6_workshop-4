@@ -1,4 +1,4 @@
-# Activity 4: Secure Refactor (Phase 1)
+# Activity 4: Secure Rewrite (Phase 1)
 
 **Primary KSBs:** K13, S8 (mitigation), S16 (setup)
 

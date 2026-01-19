@@ -642,7 +642,7 @@ For production, use Infrastructure as Code (Bicep, Terraform, or CLI YAML) and f
 
 ## Option 2: Use notebooks for MLflow tracking
 
-Notebooks give full MLflow support for tracking runs and comparing models.
+Notebooks give full MLflow support for tracking runs and comparing models! Carry out Option 1 but using code instead on safe public or synthetic data related to your EPA project.
 
 1. In Azure ML Studio, open **Notebooks**
 2. Create `epa-experiment.ipynb`
@@ -651,5 +651,11 @@ Notebooks give full MLflow support for tracking runs and comparing models.
 💡 Tip: In **Data**, open your data asset and use the **Consume** tab to copy the auto generated loading code for your notebook. You're welcome! 😀
 
 ![pandas](./images/pandas_starter.png)
+
+![notebook](./images/notebook_example.png)
+
+
+
+💡 Tip: In a new code cell run `!pip freeze` and note what packages are pre-installed for you (e.g. `mlflow-skinny==2.21.3` and `scikit-learn==1.5.1`.)
 
 ---

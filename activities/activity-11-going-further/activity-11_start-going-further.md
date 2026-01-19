@@ -648,6 +648,8 @@ Notebooks give full MLflow support for tracking runs and comparing models.
 2. Create `epa-experiment.ipynb`
 3. Use your existing compute instance
 
-Tip: In **Data**, open your data asset and use the **Consume** tab to copy the auto generated loading code.
+💡 Tip: In **Data**, open your data asset and use the **Consume** tab to copy the auto generated loading code for your notebook. You're welcome! 😀
+
+![pandas](./images/pandas_starter.png)
 
 ---

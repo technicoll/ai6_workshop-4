@@ -1,4 +1,4 @@
-# Activity 8: Secure Deployment
+# Activity 8: Fix-Forward Deployment
 
 **Primary KSB:** S16 (transition to live operation)
 
@@ -31,9 +31,6 @@ Before we deploy, let's understand the **fix-forward pattern** - the safest way 
 ```bash
 code main_secure.bicep
 ```
-
-**🌐 Cloud Shell:** Opens in built-in browser editor
-**💻 Codespaces:** Opens in VS Code editor
 
 Confirm these are present:
 - `allowBlobPublicAccess: false`
@@ -95,9 +92,10 @@ Now let's confirm the secure properties are actually applied.
 az storage account list -g $rg -o table
 ```
 
-✅ **Checkpoint:** You should see TWO storage accounts:
+✅ **Checkpoint:** You should see two storage accounts if using Codespaces, and three if using Cloud Shell:
 - `legacy...` (insecure - from Activity 2)
 - `safedev...` (secure - just deployed!)
+- `cloudaccount` (or whatever you called this storage account when setting up Cloud Shell)
 
 ---
 
@@ -117,7 +115,7 @@ az storage account show \
 ```
 Name                    TLS     PublicAccess    Kind
 ----------------------  ------  --------------  ----------
-safedevg4k7m9x2pq3s    TLS1_2  False           StorageV2
+safedevg4k7m9x2pq3s     TLS1_2  False           StorageV2
 ```
 
 All secure! ✅

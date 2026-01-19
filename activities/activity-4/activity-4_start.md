@@ -1,4 +1,4 @@
-# Activity 4: Secure Refactor (Phase 1)
+# Activity 4: Secure Rewrite (Phase 1)
 
 **Primary KSBs:** K13, S8 (mitigation), S16 (setup)
 
@@ -55,7 +55,7 @@ You'll use a starter template with TODOs that guide you through building the sec
 
 ⌨️ **Copy the text from here in the workshop repo:**
 
-`/templates/main_secure_starter.bicep`
+[main_secure_starter.bicep](../../templates/main_secure_starter.bicep)
 
 ---
 
@@ -64,11 +64,8 @@ You'll use a starter template with TODOs that guide you through building the sec
 ⌨️ **Run:**
 
 ```bash
-code main_secure_.bicep
+code main_secure.bicep
 ```
-
-**🌐 Cloud Shell:** Opens in built-in browser editor
-**💻 Codespaces:** Opens in VS Code editor
 
 Paste in the template with its TODOs and hints.
 
@@ -147,9 +144,6 @@ Let's see exactly what changed.
 code legacy.bicep
 code main_secure.bicep
 ```
-
-**🌐 Cloud Shell:** Opens both in browser editor tabs
-**💻 Codespaces:** Opens both in VS Code editor
 
 ### Key Differences
 

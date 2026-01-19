@@ -1,4 +1,4 @@
-# Activity 2: Simulating Inherited Problem
+# Activity 2: Simulating an Inherited Problem
 
 **Primary KSB:** S8 (context), S16 (setup)
 
@@ -22,7 +22,7 @@ Deploy an *insecure* infrastructure template to simulate inheriting a brownfield
 **Why NOT just use the Azure Portal?**
 Imagine your colleague set up storage by clicking 47 buttons. Now you need to create the same setup in a test environment. Which buttons? What order? What values? With IaC, you have the exact recipe.
 
-**Think of it like:** A Dockerfile vs. installing software manually.
+**Think of it like:** building with LEGO instructions vs freehand building.
 
 ⌨️ **In this activity:** You'll deploy a Bicep file (Azure's IaC language) that creates an *intentionally insecure* storage account. This simulates what might happen inheriting someone else's work. Even if such poor practice is unlikely, the remediation patterns you'll learn apply to real-world security gaps of any severity.
 
@@ -31,7 +31,7 @@ Imagine your colleague set up storage by clicking 47 buttons. Now you need to cr
 ## 🏗️ What is Bicep?
 
 **Bicep** is a domain-specific language that uses declarative syntax to deploy Azure resources. It's:
-- Cleaner than raw JSON (ARM templates)
+- Cleaner than raw JSON (i.e. ARM templates)
 - Type-checked (catches errors before deployment)
 - Natively integrated with Azure
 
@@ -48,115 +48,13 @@ Imagine your colleague set up storage by clicking 47 buttons. Now you need to cr
 
 ---
 
-## 📝 Task 0: Environment Setup (Optional for Codespaces Users)
+## 📝 Task 0: Ensure You've Followed the Setup Guide!
 
-**🌐 Cloud Shell users:** Skip to Task 1 - you're already authenticated!
-
-**💻 Codespaces users:** Complete this one-time setup:
-
-### Install Azure CLI (if not already done)
-
-⚠️ **Note:** If you are blocked for any reason, Cloud Shell in the Azure Portal is a fully supported alternative!
-
-⌨️ **Run:**
-
-```bash
-curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-```
-
-⏱️ **Takes 2-3 minutes**
-
-✅ **Checkpoint:** Verify installation:
-
-```bash
-az version
-```
+If you haven't already, ensure you've completed the steps in the [setup guide](../../docs/setup_guide.md).
 
 ---
 
-### Authenticate with Azure
-
-⌨️ **Run:**
-
-```bash
-az login
-```
-
-Follow the browser prompt and enter the code, then sign in with your Pluralsight sandbox credentials.
-
-✅ **Checkpoint:** You should see JSON output listing your subscriptions, select number 1.
-
----
-
-### Verify Working Directory
-
-⌨️ **Check you're in the workshop root:**
-
-```bash
-pwd
-```
-
-✅ **Expected:** `/workspaces/ai6_workshop-4` (or similar path ending in `ai6_workshop-4`)
-
-If not, navigate to it:
-
-```bash
-cd /workspaces/ai6_workshop-4
-```
-
----
-
-## 📝 Task 1: Verify Your Environment (5 minutes)
-
-Before deploying anything, let's make sure your environment is properly configured.
-
-### Step 1: Check Resource Group Variable
-
-⌨️ **Run this command:**
-
-```bash
-echo $rg
-```
-
-✅ **Checkpoint:** You should see output like `1-e58d5f37-playground-sandbox`
-
-⚠️ **If you see nothing:** Your `$rg` variable isn't set. Run:
-
-```bash
-export rg=$(az group list --query "[0].name" -o tsv)
-echo $rg
-```
-
-📖 This uses the az group list command you can read about here: https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli#list-resource-groups
-
-Then run this again
-
-```bash
-echo $rg
-```
-
-Now compare the resource group name that appears to the only resource group in your Azure portal they should be the same. 
-
-📖 A resource group in Azure is "a container that holds related resources for an Azure solution" https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group
-
----
-
-### Step 2: Capture and Verify Your Region
-
-⌨️ **Run these commands:**
-
-```bash
-export LOCATION=$(az group show --name $rg --query location -o tsv)
-echo "Region: $LOCATION"
-```
-
-✅ **Checkpoint:** You should see your resource group's region (commonly `eastus`, `southcentralus`, etc. in Pluralsight)
-
-💡 **Best Practice:** Storing the region in a variable ensures your deployments use the correct location automatically.
-
----
-
-## 📝 Task 2: Create the Legacy Template (15 minutes)
+## 📝 Task 1: Create the Legacy Template (15 minutes)
 
 Now you'll create the insecure Bicep template that simulates Sam's ClickOps setup.
 
@@ -169,13 +67,14 @@ code legacy.bicep
 ```
 
 **🌐 Cloud Shell:** Opens in built-in browser editor
+
 **💻 Codespaces:** Opens in VS Code editor
 
 📖 Running `code legacy.bicep` opens the file (creating it first if it doesn't already exist) in different editors depending on your environment. In VS Code's integrated terminal, it opens the file in VS Code itself. In Azure Cloud Shell, it opens the file in the portal's built-in Monaco* editor, a lightweight browser-based code editor.
 
 📖 * https://learn.microsoft.com/en-us/azure/cloud-shell/using-cloud-shell-editor
 
-⚠️ **Note:** If you are doing this in the Cloud Shell you may be asked to use the legacy Cloud Shell. This is fine to accept.
+⚠️ **Note:** If you are doing this in the Cloud Shell you may be asked to use the legacy Cloud Shell (or a "previous version"). **You should accept this if prompted**.
 
 ---
 
@@ -193,7 +92,8 @@ Copy the entire content from [templates/legacy.bicep](../../templates/legacy.bic
 
 ### Step 3: Save the File
 
-**🌐 Cloud Shell:** Ctrl+S
+**🌐 Cloud Shell:** Ctrl+S (or right-click the editor then select "Save")
+
 **💻 Codespaces:** Press Ctrl+S (Cmd+S on Mac)
 
 ✅ **Checkpoint:** The file should now exist in your current directory.
@@ -206,7 +106,7 @@ ls -l legacy.bicep
 
 ---
 
-## 📝 Task 3: Deploy the Legacy Template (10 minutes)
+## 📝 Task 2: Deploy the Legacy Template (10 minutes)
 
 Now let's deploy this insecure infrastructure to your sandbox.
 
@@ -260,13 +160,13 @@ Get comfortable navigating official documentation so you can work confidently an
 az storage account list -g $rg -o table
 ```
 
-✅ **Checkpoint:** You should see a storage account with a name like `legacy<random-string>`
+✅ **Checkpoint:** You should see a storage account with a name like `legacy<random-string>`. You may also see additional storage accounts, but what is important is that you see this one. Note that the "Name" column is quite far to the right.
 
-**Example output:**
+**Example output:** (This does not reflect the sum total of columns or the column order, just example values for each column.)
 ```
 Name                        Location    ResourceGroup
 --------------------------  ----------  -----------------------------
-legacyg4k7m9x2pq3s         eastus      1-e58d5f37-playground-sandbox
+legacyg4k7m9x2pq3s          eastus      1-e58d5f37-playground-sandbox
 ```
 
 💡 **Why the random string?** The `uniqueString()` function in Bicep generates a hash based on your resource group ID. This ensures globally unique storage account names (required by Azure).
@@ -277,11 +177,24 @@ legacyg4k7m9x2pq3s         eastus      1-e58d5f37-playground-sandbox
 
 ⌨️ **List containers in the storage account:**
 
+**Option 1: If working from the Cloud Shell**
+
 ```bash
 # Get the storage account name
+export STORAGE_ACCOUNT=$(az storage account list -g $rg --query "[1].name" -o tsv)
+echo "Storage account: $STORAGE_ACCOUNT"
+```
+
+**Option 2: If working from Codespaces**
+
+```bash
 export STORAGE_ACCOUNT=$(az storage account list -g $rg --query "[0].name" -o tsv)
 echo "Storage account: $STORAGE_ACCOUNT"
+```
 
+**Then for both:**
+
+```bash
 # List containers
 az storage container list \
   --account-name $STORAGE_ACCOUNT \
@@ -294,9 +207,7 @@ az storage container list \
 
 ⚠️ **This means anyone with the URL can read files!** That's one of the vulnerabilities you likely identified in Activity 1.
 
----
-
-## 🔒 Observe the Insecure Properties
+### Step 4: 🔒 Observe the Insecure Properties
 
 Let's verify the specific vulnerabilities we identified in Activity 1:
 
@@ -333,7 +244,6 @@ You've just deployed insecure infrastructure! In the real world, this is exactly
 
 Before moving to Activity 3, make sure you have:
 
-- [ ] Verified your `$rg` variable is set
 - [ ] Created `legacy.bicep` in your workspace
 - [ ] Successfully deployed the legacy template
 - [ ] Verified a storage account named `legacy<random>` exists
@@ -378,7 +288,7 @@ Look at the `"properties": {` section - what information does Azure provide?
 
 Now that you've deployed the insecure infrastructure, it's time to introspect it!
 
-Move to [Activity 3: Introspection](./activity-3/activity-3_start.md) to:
+Move to [Activity 3: Introspection](../activity-3/activity-3_start.md) to:
 - Export your deployed resources to JSON
 - Learn about the "Two-Lane Model" (patch vs. refactor)
 - Understand why we'll choose the refactor approach

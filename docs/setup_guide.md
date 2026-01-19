@@ -1,7 +1,5 @@
 # Workshop 4 Setup Guide
 
----
-
 ## 🖥️ Choose Your Environment
 
 This workshop supports two environments. Choose ONE:
@@ -66,7 +64,7 @@ Azure CLI offers **four authentication methods**, each suited for different scen
 
 Before starting Activity 1, ensure you have:
 
-- [ ] Access to Pluralsight P8 Sandbox
+- [ ] Access to Pluralsight Sandbox
 - [ ] Azure Cloud Shell working
 - [ ] Resource group and region variables set
 
@@ -76,11 +74,13 @@ Before starting Activity 1, ensure you have:
 
 ### Login to Azure Portal
 
-1. Navigate to [portal.azure.com](https://portal.azure.com)
-2. Login with your Pluralsight sandbox credentials
-3. Verify you see the Azure Portal dashboard
+1. Start an Azure Cloud sandbox (just the normal cloud sandbox, not an AI one)
+2. Ensure you're not signed in to a Microsoft account in your private browsing window already. If you are, close all private browsing windowe before you proceed.
+3. Right-click the "Open Sandbox" button and open in a private browsing window
+4. Login with your Pluralsight sandbox credentials
+5. Verify you see the Azure Portal dashboard
 
-✅ **Checkpoint:** You can see "Resource groups" in the left menu
+✅ **Checkpoint:** You can see your resource group name in the top-left hand corner (looks like "1-xxxxxxxx-playground-sandbox"), with "Resource group" beneath it.
 
 ---
 
@@ -88,15 +88,16 @@ Before starting Activity 1, ensure you have:
 
 1. Click the **Cloud Shell icon** (>_) in the top-right toolbar
 2. Select **Bash** if prompted
-3. Accept creating a storage account in the same region as the Resource Group (see below).
-4. Wait for Cloud Shell to initialize (~30 seconds)
-
-✅ **Checkpoint:** You see a bash prompt like `user@Azure:~$`
-
-⚠️ **Cloud Shell storage**:
-1. Click "Mount storage account", select the subscription, then...
-2. select "I want to create a strorage account" then..
-3. give both `Storage account:` and `File share:` globally unique names.
+3. Select "Mount storage account"
+4. Select the one storage account subscription available in the drop-down (will look like "Px-Real Hands-On Labs")
+5. Click "Apply"
+6. Select "I want to create a storage account" and click "Next"
+7. Select the one available resource group under "Resource group" (which should have the same name as that in the top-left corner of the dashboard)
+8. Select the region that matches the "Location" in the dashboard (look in the middle of the screen under "Essentials"), which is often (but not always) "East US"
+9. Provide a "Storage account name" and "File share". These can be whatever you want, but make them easy to identify e.g. `cloudaccount` and `cloudfiles`, respectively.
+10. Click "Create"
+11. Wait for Cloud Shell to initialise (~30 seconds)
+12. Once initialised, click the "Settings" button in the toolbar for the Cloude Shell (which has a cog icon beside it) and select "Go to Classic Version".
 
 ---
 
@@ -145,7 +146,7 @@ az group show --name $rg --query location -o tsv
 
 ---
 
-## Step 3: Install/Verify Tools (5 minutes)
+## Step 3: Install/Verify Tools
 
 ### Check Azure CLI
 
@@ -161,6 +162,8 @@ az version
 
 ## Codespaces Setup
 
+⚠️ You do **not** need to complete Codespaces Setup if you've already completed the above steps for Cloud Shell. Move on to the [Both Environments: Final Checks](#both-environments-final-checks) section below.
+
 ### 🎯 Pre-Workshop Checklist
 
 Before starting Activity 1, ensure you have:
@@ -175,7 +178,7 @@ Before starting Activity 1, ensure you have:
 
 ---
 
-### Step 1: Fork Repository via GitHub Classroom (2 minutes)
+### Step 1: Fork Repository via GitHub Classroom
 
 ⚠️ **Important:** You'll receive a GitHub Classroom link separately from your coach.
 
@@ -224,7 +227,7 @@ You should see Azure CLI version 2.30+ installed
 
 ---
 
-### Step 4: Authenticate with Azure (5 minutes)
+### Step 4: Authenticate with Azure
 
 ⌨️ **Run:**
 
@@ -292,28 +295,16 @@ Regardless of which environment you chose, verify these work:
 ⌨️ **Run:**
 
 ```bash
+az bicep install
+```
+
+Then check it's installed successfully with:
+
+```bash
 az bicep version
 ```
 
 ✅ **Checkpoint:** You see Bicep CLI version (0.20.0 or newer)
-
-⚠️ **If not installed:**
-
-```bash
-az bicep install
-```
-
----
-
-### Verify Azure Connection
-
-⌨️ **Run:**
-
-```bash
-az group list --output table
-```
-
-✅ **Checkpoint:** You see your sandbox resource group listed
 
 ---
 
@@ -333,61 +324,6 @@ echo "Ready for workshop!"
 ## 🎉 You're Ready!
 
 You've successfully set up your environment. You can now start with [Activity 1](../activities/activity-1/activity-1_start.md).
-
----
-
-## 📚 Next Steps
-
-```bash
-git --version
-```
-
-✅ **Checkpoint:** You see Git version installed
-
----
-
-## Step 4: Clone Workshop Repository (only for Cloud Shell users)
-
-⚠️ If you used the GitHub classroom link and are working in a GitHub Codespae you don't need to do this
-
-### Clone the Repo
-
-You can optionally clone the repo for Cloud Shell users.
-
-⌨️ **Run:**
-
-```bash
-cd ~
-git clone <REPOSITORY_URL> ai6_workshop-4
-cd ai6_workshop-4
-```
-
-Replace `<REPOSITORY_URL>` with the actual repository URL of your GitHub Classrom fork 
-
----
-
-### Verify Structure
-
-⌨️ **Run:**
-
-```bash
-ls -la
-```
-
-✅ **Checkpoint:** You should see files and folders such as:
-- `README.md`
-- `user_brief.md`
-- `activities/` folder
-- `templates/` folder
-- `docs/` folder
-- `diagrams/` folder
-
-
-## ✅ Ready to Start!
-
-If all checkpoints passed, you're ready for the workshop!
-
-Start with [Activity 1: Legacy Audit](../activities/activity-1/activity-1_start.md)
 
 ---
 

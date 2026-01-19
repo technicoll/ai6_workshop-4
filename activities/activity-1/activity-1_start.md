@@ -12,7 +12,7 @@ Identify at least three specific security vulnerabilities in a legacy cloud stor
 
 ## 📖 The Scenario
 
-Welcome to your first day as and ML engineer! You've been asked to audit the "raw data landing zone" - the cloud storage where external vendors drop data files before they enter your ML pipeline.
+Welcome to your first day as an ML engineer! You've been asked to audit the "raw data landing zone" - the cloud storage where external vendors drop data files before they enter your ML pipeline.
 
 The previous developer, Sam, left three weeks ago. Sam built this using "ClickOps" (clicking through the Azure Portal) and left behind:
 - A working storage account
@@ -80,7 +80,7 @@ Below is a diagram showing what Sam built. Your task is to spot the security pro
 
 ## 📝 Task 1: Guided Vulnerability Discovery (15 minutes)
 
-Study the diagram above and answer these three questions. Write your answers in your notes or in a new file called `SECURITY_AUDIT.md`.
+Study the diagram above and answer these three questions. Write your answers in your notes or in a new draft file called `SECURITY_AUDIT.md`.
 
 ### 🔍 Question 1: Data Exposure
 **Where do you see possible data exposure in this architecture?**
@@ -99,7 +99,7 @@ Study the diagram above and answer these three questions. Write your answers in 
 
 ## 📝 Task 2: Document Your Findings (10 minutes)
 
-Create a file called `SECURITY_AUDIT.md` with your findings. Use this template:
+Format your draft `SECURITY_AUDIT.md` using the template below and fill it out:
 
 ```markdown
 # Security Audit: Raw Data Landing Zone
@@ -141,4 +141,4 @@ Before moving to Activity 2, make sure you have:
 - [ ] Explained the **risk** of each vulnerability (what could go wrong)
 - [ ] Created a `SECURITY_AUDIT.md` file with your findings
 
-**Remember:** This activity is about **identifying** vulnerabilities. In Activity 2, you'll deploy them (to understand what you're fixing), and in Activity 4, you'll fix them properly.
+**Remember:** This activity is about **identifying** vulnerabilities. In [Activity 2](../activity-2/activity-2_start.md), you'll deploy them (to understand what you're fixing), and in Activity 4, you'll fix them properly.

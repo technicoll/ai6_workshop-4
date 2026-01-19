@@ -55,25 +55,25 @@ By the end of this workshop, you'll be able to:
 
 Discover what you've inherited and identify the problems.
 
-| Activity | Title | Time | Focus |
-|----------|-------|------|-------|
-| **1** | [Legacy Audit](activities/activity-1/) | 09:30-10:00 | Spot vulnerabilities in diagrams |
-| **2** | [Simulating Inherited Problem](activities/activity-2/) | 10:00-10:30 | Deploy insecure infrastructure |
-| **3** | [Introspection](activities/activity-3/) | 10:45-11:15 | Examine deployed resources |
-| **4** | [Secure Refactor Phase 1](activities/activity-4/) | 11:15-12:00 | Build clean baseline template |
-| **5** | [Pipeline Sketch](activities/activity-5/) | 12:00-12:30 | Design secure data flow |
+| Activity | Title | Focus |
+|----------|-------|-------|
+| **1** | [Legacy Audit](activities/activity-1/) | Spot vulnerabilities in diagrams |
+| **2** | [Simulating an Inherited Problem](activities/activity-2/) | Deploy insecure infrastructure |
+| **3** | [Introspection Steps](activities/activity-3/) | Examine deployed resources |
+| **4** | [Secure Rewrite (Phase 1)](activities/activity-4/) | Build clean baseline template |
+| **5** | [Pipeline Sketch (Design Check)](activities/activity-5/) | Design secure data flow |
 
 ### Afternoon: "The Refactor" (Proactive & Standards-Based)
 
 Build secure, repeatable infrastructure that meets governance standards.
 
-| Activity | Title | Time | Focus |
-|----------|-------|------|-------|
-| **6** | [Parameterisation](activities/activity-6/) | 13:30-14:00 | Make templates reusable |
-| **7** | [Staging Gate (what-if)](activities/activity-7/) | 14:00-14:30 | Validate before deploying |
-| **8** | [Secure Deployment](activities/activity-8/) | 14:30-15:15 | Deploy secure infrastructure |
-| **9** | [Governance Handoff](activities/activity-9/) | 15:15-16:00 | Document for operations |
-| **10** | [Reflection & Standards](activities/activity-10/) | 16:00-16:30 | Connect to industry standards |
+| Activity | Title | Focus |
+|----------|-------|-------|
+| **6** | [Adding Parameters](activities/activity-6/) | Make templates reusable |
+| **7** | [Interpreting the Diff](activities/activity-7/) | Validate before deploying |
+| **8** | [Fix-Forward Deployment](activities/activity-8/) | Deploy secure infrastructure |
+| **9** | [Governance Handoff](activities/activity-9/) | Document for operations |
+| **10** | [Reflection & Standards](activities/activity-10/) | Connect to industry standards |
 
 ---
 

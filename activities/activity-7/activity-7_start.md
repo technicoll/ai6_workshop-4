@@ -1,4 +1,4 @@
-# Activity 7: Staging Gate (what-if)
+# Activity 7: Interpreting the Diff
 
 **Primary KSB:** S10 (validate fitness for purpose)
 
@@ -74,13 +74,13 @@ Scope: /subscriptions/.../resourceGroups/1-e58d5f37-playground-sandbox
 Resource changes: 3 to create.
 ```
 
-✅ **Checkpoint:** You should see **3 resources to create**, with **0 to delete**
+✅ **Checkpoint:** You should see **3 resources to create**, with **0 to delete** (and possibly **x to ignore**).
 
 ---
 
 ### Step 3: Verify Security Properties
 
-Look for these lines in the output:
+Look for these lines in the what-if output:
 
 ```
 properties.allowBlobPublicAccess:     false    ✅
@@ -125,7 +125,7 @@ az deployment group what-if \
 **Notice:**
 - Different storage account name: `safetestg4k7m9x2pq3s`
 - Different container name: `raw-test`
-- Different tag: `environment: "test"`
+- Different tag: `tags.environment: "test"`
 - **Same security properties!** (TLS1_2, no public access)
 
 ---
@@ -134,17 +134,10 @@ az deployment group what-if \
 
 Answer these questions:
 
-**Q1: What does `+ Create` mean?**
-- ✅ 
-
-**Q2: What does `- Delete` mean?**
-- ✅ 
-
-**Q3: What does `~ Modify` mean?**
-- ✅ 
-
-**Q4: When should you run what-if?**
-- ✅ 
+1. What does `+ Create` mean?
+1. What does `- Delete` mean?
+1. What does `~ Modify` mean?
+1. When should you run what-if?
 
 ---
 

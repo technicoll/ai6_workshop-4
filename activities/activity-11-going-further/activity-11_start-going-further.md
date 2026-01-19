@@ -543,26 +543,32 @@ As below, click **Show data outputs** then click on the **Preview data** buttons
 
 # Part 10: Register and Deploy the Model
 
-## Step 10.1: Manually register the trained model (Jobs)
+## Step 10.1: Register the trained model
 
-1. Click the **Train Model** component.
+1. Click the **Train Model** component in your pipeline run.
 2. Open **Outputs + logs**.
-3. When prompted to select an output, choose **`trained_model_outputs/`** (the folder).
-4. Click **Register model** and give it a name (for example: `rf-taxi-fare-secure`).
+3. Select **`trained_model_outputs/`** (the folder).
+4. Click **Register model** and name it (for example: `rf-taxi-fare-secure`).
 
-✅ **Checkpoint:** Your model appears under **Models** in Azure ML Studio.
+✅ **Checkpoint:** The model appears under **Models** in Azure ML Studio.
 
-💡 **Where to get the scoring script**
-Open **Train Model → Outputs + logs → trained_model_outputs/** and download **`score.py`**.
+## Step 10.2: Get the scoring script (needed for deployment)
 
-💡 **Next step (optional): Deploy the model**
-You can start deployment from the **Models** tab, but…
+The deployment wizard needs a scoring script to handle incoming requests and return predictions.
 
-![deploy](/images/deploy.png)
+Open:
 
-⚠️ **Pluralsight sandbox note:** Deploying real time endpoints triggers extra compute and Pluralsight may shut down the sandbox. For this workshop, registering the model is enough to demonstrate the workflow.
+**Train Model → Outputs + logs → trained_model_outputs/** → download **`score.py`**
 
-You can finally view your deployed model in the **Endpoints** section of the left pane!
+## Step 10.3: Deploy (optional)
+
+From the **Models** tab, select your model and choose **Deploy**.
+
+![deploy](./images/deploy.png)
+
+⚠️ **Pluralsight sandbox note:** Real time endpoints trigger extra compute and Pluralsight may shut down the sandbox. For this workshop, registration is enough to demonstrate the workflow.
+
+If you do deploy, you will find the endpoint under **Endpoints** in the left menu.
 
 ---
 

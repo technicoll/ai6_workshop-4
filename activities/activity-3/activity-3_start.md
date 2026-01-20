@@ -52,7 +52,7 @@ Think of exports like reverse-engineering a recipe from a finished dish—you ca
 
 ---
 
-## 📝 Task 1: Export Resource Group (10 minutes)
+## 📝 Task 1: Export Resource Group
 
 ### Step 1: Export to JSON
 
@@ -101,7 +101,7 @@ code current_state.json
 
 ---
 
-## 📝 Task 2: Find the Vulnerability in JSON (5 minutes)
+## 📝 Task 2: Find the Vulnerability in JSON
 
 Let's use search to find the insecure TLS setting.
 
@@ -134,7 +134,7 @@ While still in `current_state.json`, search for:
 
 ---
 
-## 📝 Task 3: Decompile to Bicep (10 minutes)
+## 📝 Task 3: Decompile to Bicep
 
 Azure can convert JSON templates back to Bicep. This makes them easier to read (but still not production-ready!).
 

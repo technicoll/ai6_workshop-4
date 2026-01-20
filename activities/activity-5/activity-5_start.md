@@ -24,7 +24,7 @@ You've written a secure template. Before deploying it, let's make sure you under
 
 ---
 
-## 📝 Task 1: Review the Secure Architecture (10 minutes)
+## 📝 Task 1: Review the Secure Architecture
 
 First, let's look at what a secure data flow SHOULD look like.
 

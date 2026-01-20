@@ -22,7 +22,7 @@ You've built secure infrastructure, but your work isn't done until the operation
 
 ---
 
-## 📝 Task 1: Create HANDOFF.md (30 minutes)
+## 📝 Task 1: Create HANDOFF.md
 
 Create a file called `HANDOFF.md` that documents your secure infrastructure.
 

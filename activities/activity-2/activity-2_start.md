@@ -54,7 +54,7 @@ If you haven't already, ensure you've completed the steps in the [setup guide](.
 
 ---
 
-## 📝 Task 1: Create the Legacy Template (15 minutes)
+## 📝 Task 1: Create the Legacy Template
 
 Now you'll create the insecure Bicep template that simulates Sam's ClickOps setup.
 
@@ -106,7 +106,7 @@ ls -l legacy.bicep
 
 ---
 
-## 📝 Task 2: Deploy the Legacy Template (10 minutes)
+## 📝 Task 2: Deploy the Legacy Template
 
 Now let's deploy this insecure infrastructure to your sandbox.
 

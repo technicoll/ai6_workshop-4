@@ -134,7 +134,7 @@ resource rawSecure 'Microsoft.Storage/storageAccounts/blobServices/containers@20
 
 ---
 
-## 📝 Task 2: Compare Against Legacy (5 minutes)
+## 📝 Task 2: Compare Against Legacy
 
 Let's see exactly what changed.
 

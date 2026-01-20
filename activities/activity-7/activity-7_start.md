@@ -107,7 +107,7 @@ If you see these, your secure template is ready to deploy!
 
 ---
 
-## 📝 Task 2: Compare Different Environments (10 minutes)
+## 📝 Task 2: Compare Different Environments
 
 Let's see how parameters affect the output.
 

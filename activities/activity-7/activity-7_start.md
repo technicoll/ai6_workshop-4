@@ -1,6 +1,6 @@
 # Activity 7: Interpreting the Diff
 
-**Primary KSB:** S10 (validate fitness for purpose)
+**Primary KSB:** S10 (Apply techniques for monitoring models in the live environment to check they remain fit for purpose and stable)
 
 ---
 

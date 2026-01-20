@@ -1,6 +1,6 @@
 # Activity 9: Governance Handoff
 
-**Primary KSBs:** S16 (transition to live), B4 (integrity)
+**Primary KSBs:** S16 (Transition prototypes into the live environment), B4 (Acts with integrity, giving due regard to legal, ethical and regulatory requirements)
 
 ---
 

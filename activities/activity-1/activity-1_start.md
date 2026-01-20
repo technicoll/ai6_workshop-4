@@ -1,6 +1,6 @@
 # Activity 1: Legacy Audit
 
-**Primary KSB:** S8 (Assess system vulnerabilities)
+**Primary KSB:** S8 (Assess system vulnerabilities and mitigate the threats or risks to assets, data and cyber security)
 
 ---
 

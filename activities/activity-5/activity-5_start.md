@@ -1,6 +1,6 @@
 # Activity 5: Pipeline Sketch (Design Check)
 
-**Primary KSB:** S10 (fitness for purpose), S16
+**Primary KSB:** S10 (Apply techniques for monitoring models in the live environment to check they remain fit for purpose and stable), S16
 
 ---
 

@@ -1,6 +1,6 @@
 # Activity 4: Secure Refactor (Phase 1) - SOLUTION
 
-**Primary KSBs:** K13, S8 (mitigation), S16 (setup)
+**Primary KSBs:** K13 (Data and information security standards, ethical practices, policies and procedures relevant to data management activities such as data lineage, data retention and metadata management), S8 (Assess system vulnerabilities and mitigate the threats or risks to assets, data and cyber security), S16 (Transition prototypes into the live environment)
 
 ---
 

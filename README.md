@@ -41,11 +41,11 @@ By the end of this workshop, you'll be able to:
 
 ### Key Skills, Behaviours & Knowledge (KSBs)
 
-- **S8:** Assess system vulnerabilities and weaknesses
-- **K13:** Standards and frameworks for information security
-- **S16:** Initiate, design, and document transition to live operation
-- **S10:** Validate appropriateness and quality of systems
-- **B4:** Consistency and integrity in every aspect of work
+- **K13:** Data and information security standards, ethical practices, policies and procedures relevant to data management activities such as data lineage, data retention and metadata management.
+- **S8:** Assess system vulnerabilities and mitigate the threats or risks to assets, data and cyber security.
+- **S10:** Apply techniques for monitoring models in the live environment to check they remain fit for purpose and stable.
+- **S16:** Transition prototypes into the live environment.
+- **B4:** Acts with integrity, giving due regard to legal, ethical and regulatory requirements.
 
 ---
 
@@ -61,7 +61,6 @@ Discover what you've inherited and identify the problems.
 | **2** | [Simulating an Inherited Problem](activities/activity-2/) | Deploy insecure infrastructure |
 | **3** | [Introspection Steps](activities/activity-3/) | Examine deployed resources |
 | **4** | [Secure Rewrite (Phase 1)](activities/activity-4/) | Build clean baseline template |
-| **5** | [Pipeline Sketch (Design Check)](activities/activity-5/) | Design secure data flow |
 
 ### Afternoon: "The Refactor" (Proactive & Standards-Based)
 
@@ -69,6 +68,7 @@ Build secure, repeatable infrastructure that meets governance standards.
 
 | Activity | Title | Focus |
 |----------|-------|-------|
+| **5** | [Pipeline Sketch (Design Check)](activities/activity-5/) | Design secure data flow |
 | **6** | [Adding Parameters](activities/activity-6/) | Make templates reusable |
 | **7** | [Interpreting the Diff](activities/activity-7/) | Validate before deploying |
 | **8** | [Fix-Forward Deployment](activities/activity-8/) | Deploy secure infrastructure |

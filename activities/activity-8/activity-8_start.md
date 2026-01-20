@@ -1,6 +1,6 @@
 # Activity 8: Fix-Forward Deployment
 
-**Primary KSB:** S16 (transition to live operation)
+**Primary KSB:** S16 (Transition prototypes into the live environment)
 
 ---
 

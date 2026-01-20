@@ -35,6 +35,7 @@ code HANDOFF.md
 ---
 
 ### Use This Template
+The template below already contains much of the information you would need in a handoff document. Make sure you read and understand it, in the first instance. Consider moving sections, deleting sections, reformatting or rewording for clarity, adding words to disambiguate, and, if you so wish, describing things in your own words!
 
 ````markdown
 # Raw Data Landing Zone - Governance Handoff

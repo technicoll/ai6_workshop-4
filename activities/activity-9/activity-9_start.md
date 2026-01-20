@@ -36,7 +36,7 @@ code HANDOFF.md
 
 ### Use This Template
 
-```markdown
+````markdown
 # Raw Data Landing Zone - Governance Handoff
 
 **Date:** [Today's date]
@@ -246,7 +246,7 @@ Commit: [Git commit hash]
 - [Setup Guide](../../docs/setup_guide.md)
 - [Troubleshooting Guide](../../docs/troubleshooting.md)
 - [Security Audit](../../activities/activity-1/)
-
+````
 ---
 
 ## ✅ Checkpoint

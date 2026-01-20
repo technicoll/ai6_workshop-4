@@ -1,6 +1,6 @@
 # Activity 6: Adding Parameters
 
-**Primary KSB:** S16 (design for live operation)
+**Primary KSB:** S16 (Transition prototypes into the live environment)
 
 ---
 

@@ -1,6 +1,6 @@
 # Activity 7: Interpreting the Diff
 
-**Primary KSB:** S10 (validate fitness for purpose)
+**Primary KSB:** S10 (Apply techniques for monitoring models in the live environment to check they remain fit for purpose and stable)
 
 ---
 
@@ -107,7 +107,7 @@ If you see these, your secure template is ready to deploy!
 
 ---
 
-## 📝 Task 2: Compare Different Environments (10 minutes)
+## 📝 Task 2: Compare Different Environments
 
 Let's see how parameters affect the output.
 

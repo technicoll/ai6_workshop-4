@@ -1,6 +1,6 @@
 # Activity 9: Governance Handoff
 
-**Primary KSBs:** S16 (transition to live), B4 (integrity)
+**Primary KSBs:** S16 (Transition prototypes into the live environment), B4 (Acts with integrity, giving due regard to legal, ethical and regulatory requirements)
 
 ---
 
@@ -22,7 +22,7 @@ You've built secure infrastructure, but your work isn't done until the operation
 
 ---
 
-## 📝 Task 1: Create HANDOFF.md (30 minutes)
+## 📝 Task 1: Create HANDOFF.md
 
 Create a file called `HANDOFF.md` that documents your secure infrastructure.
 
@@ -35,8 +35,9 @@ code HANDOFF.md
 ---
 
 ### Use This Template
+The template below already contains much of the information you would need in a handoff document. Make sure you read and understand it, in the first instance. Consider moving sections, deleting sections, reformatting or rewording for clarity, adding words to disambiguate, and, if you so wish, describing things in your own words!
 
-```markdown
+````markdown
 # Raw Data Landing Zone - Governance Handoff
 
 **Date:** [Today's date]
@@ -246,7 +247,7 @@ Commit: [Git commit hash]
 - [Setup Guide](../../docs/setup_guide.md)
 - [Troubleshooting Guide](../../docs/troubleshooting.md)
 - [Security Audit](../../activities/activity-1/)
-
+````
 ---
 
 ## ✅ Checkpoint

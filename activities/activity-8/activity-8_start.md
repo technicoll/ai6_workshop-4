@@ -1,6 +1,6 @@
 # Activity 8: Fix-Forward Deployment
 
-**Primary KSB:** S16 (transition to live operation)
+**Primary KSB:** S16 (Transition prototypes into the live environment)
 
 ---
 
@@ -22,7 +22,7 @@ Before we deploy, let's understand the **fix-forward pattern** - the safest way 
 
 ---
 
-## 📝 Task 1: Deploy Secure Template (15 minutes)
+## 📝 Task 1: Deploy Secure Template
 
 ### Step 1: Final Pre-Flight Check
 
@@ -146,7 +146,7 @@ The `PublicAccess` column is absent because the value is null—meaning the cont
 
 ---
 
-## 📝 Task 3: Compare Legacy vs Secure (10 minutes)
+## 📝 Task 3: Compare Legacy vs Secure
 
 Let's see the difference side-by-side.
 
@@ -197,7 +197,7 @@ az storage account show \
 
 ---
 
-## 📝 Task 4: Clean Up Legacy Infrastructure (5 minutes)
+## 📝 Task 4: Clean Up Legacy Infrastructure
 
 Now that the secure infrastructure is verified, we can remove the insecure legacy container.
 

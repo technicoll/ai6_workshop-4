@@ -1,6 +1,6 @@
 # Activity 10: Reflection & Standards
 
-**Primary KSBs:** K13 (security standards), B4 (integrity)
+**Primary KSBs:** K13 (Data and information security standards, ethical practices, policies and procedures relevant to data management activities such as data lineage, data retention and metadata management), B4 (Acts with integrity, giving due regard to legal, ethical and regulatory requirements)
 
 ---
 
@@ -21,7 +21,7 @@ But **why** are these considered security best practices? Let's connect your wor
 
 ---
 
-## 📝 Task 1: Map Fixes to Standards (20 minutes)
+## 📝 Task 1: Map Fixes to Standards
 
 For each security fix you made, identify which industry standards require it.
 
@@ -127,7 +127,7 @@ Hardcoded tokens = shared secrets that can't be easily revoked, no audit trail, 
 
 ---
 
-## 📝 Task 2: Create Your Reflection Document (10 minutes)
+## 📝 Task 2: Create Your Reflection Document
 
 Create a file called `REFLECTION.md` with your thoughts:
 

@@ -1,6 +1,6 @@
 # Activity 1: Legacy Audit
 
-**Primary KSB:** S8 (Assess system vulnerabilities)
+**Primary KSB:** S8 (Assess system vulnerabilities and mitigate the threats or risks to assets, data and cyber security)
 
 ---
 
@@ -78,7 +78,7 @@ Below is a diagram showing what Sam built. Your task is to spot the security pro
 
 ---
 
-## 📝 Task 1: Guided Vulnerability Discovery (15 minutes)
+## 📝 Task 1: Guided Vulnerability Discovery
 
 Study the diagram above and answer these three questions. Write your answers in your notes or in a new draft file called `SECURITY_AUDIT.md`.
 
@@ -97,7 +97,7 @@ Study the diagram above and answer these three questions. Write your answers in 
 
 ---
 
-## 📝 Task 2: Document Your Findings (10 minutes)
+## 📝 Task 2: Document Your Findings
 
 Format your draft `SECURITY_AUDIT.md` using the template below and fill it out:
 

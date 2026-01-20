@@ -1,6 +1,6 @@
 # Activity 4: Secure Rewrite (Phase 1)
 
-**Primary KSBs:** K13, S8 (mitigation), S16 (setup)
+**Primary KSBs:** K13 (Data and information security standards, ethical practices, policies and procedures relevant to data management activities such as data lineage, data retention and metadata management), S8 (Assess system vulnerabilities and mitigate the threats or risks to assets, data and cyber security), S16 (setup)
 
 ---
 
@@ -134,7 +134,7 @@ resource rawSecure 'Microsoft.Storage/storageAccounts/blobServices/containers@20
 
 ---
 
-## 📝 Task 2: Compare Against Legacy (5 minutes)
+## 📝 Task 2: Compare Against Legacy
 
 Let's see exactly what changed.
 

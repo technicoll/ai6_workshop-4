@@ -1,6 +1,6 @@
 # Activity 3: Introspection - SOLUTION
 
-**Primary KSBs:** S16, S8, K13
+**Primary KSBs:** S16 (Transition prototypes into the live environment), S8 (Assess system vulnerabilities and mitigate the threats or risks to assets, data and cyber security), K13 (Data and information security standards, ethical practices, policies and procedures relevant to data management activities such as data lineage, data retention and metadata management)
 
 ---
 

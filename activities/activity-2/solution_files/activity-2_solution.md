@@ -1,6 +1,6 @@
 # Activity 2: Simulating Inherited Problem - SOLUTION
 
-**Primary KSB:** S8 (context), S16 (setup)
+**Primary KSB:** S8 (Assess system vulnerabilities and mitigate the threats or risks to assets, data and cyber security), S16 (setup)
 
 ---
 

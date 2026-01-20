@@ -1,6 +1,6 @@
 # Activity 5: Pipeline Sketch (Design Check)
 
-**Primary KSB:** S10 (fitness for purpose), S16
+**Primary KSB:** S10 (Apply techniques for monitoring models in the live environment to check they remain fit for purpose and stable), S16
 
 ---
 
@@ -24,7 +24,7 @@ You've written a secure template. Before deploying it, let's make sure you under
 
 ---
 
-## 📝 Task 1: Review the Secure Architecture (10 minutes)
+## 📝 Task 1: Review the Secure Architecture
 
 First, let's look at what a secure data flow SHOULD look like.
 
